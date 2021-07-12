@@ -15,6 +15,8 @@ class Jiffy {
   late DateTime _dateTime;
   static late Locale _defaultLocale;
 
+  static Locale get currentLocale => _defaultLocale;
+
   DateTime get dateTime => _dateTime;
 
   Jiffy([var input, String? pattern]) {
